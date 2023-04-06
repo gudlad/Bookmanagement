@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<h1>Book information page</h1>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Autor</th>
+        <th>Data</th>
+        <th>ISBN</th>
+    </tr>
+        <tr>
+            <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.publication_date}}</td>
+            <td>{{book.isbn_nr}}</td>
+        
+        </tr>
+</table>
+{% endblock %}

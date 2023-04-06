@@ -1,0 +1,47 @@
+{% extends 'main/base.html' %}
+
+{% block view_header %}
+<h1>page with a list of books</h1>
+{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+    <div class="card card-body mb-3">
+        <div class="">
+        <form method="get">
+                {{my_filter.form}}
+            <button type="submit", name="filter", value="filter" class="btn btn-success mt-3">
+                Search</button>
+        </form>
+        </div>
+    </div>
+</div>
+
+<table class="table table-striped table-hover table-bordered align-middle caption-top">
+    <tr class="text-center">
+        <th>#</th>
+        <th>Title</th>
+        <th>Autor</th>
+        <th>publication date</th>
+        <th>ISBN</th>
+        <th>Number of pages</th>
+        <th>Link to cover</th>
+        <th>Language of publication</th>
+        <th>Edit</th>
+    </tr>
+    {% for item in list.all %}
+    <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.author}}</td>
+        <td>{{item.publication_date|date:"Y-m-d"}}</td>
+        <td>{{item.isbn}}</td>
+        <td>{{item.page_count}}</td>
+        <td><div class="card"><a href={{item.front_page_link}} class="btn btn-light" target="_blank" rel="noopener noreferrer">Link to cover</a></div></td>
+        <td>{{item.language}}</td>
+        <td><div class="row justify-content-center px-3"><a href="/edit/{{item.id}}" class="btn btn-primary">Edit</a></div></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
