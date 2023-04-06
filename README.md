@@ -13,7 +13,7 @@ Djanago full stack project
 ![Screenshot 2023-04-06 182629](https://user-images.githubusercontent.com/86596477/230386894-e01dd966-5285-431d-9840-212b1fdd93c8.png)
 
 # user seraches for book with help of google book api
-![Screenshot 2023-04-06 182642](https://user-images.githubusercontent.com/86596477/230386913-69c91e7f-5b1f-48e6-b1ec-59a882000689.png)
+![Screenshot 2023-04-07 003137](https://user-images.githubusercontent.com/86596477/230471418-db88d850-8118-43b8-9c45-f11b15875457.png)
 
 # user can delete the book using edit option
 ![Screenshot 2023-04-06 182704](https://user-images.githubusercontent.com/86596477/230386921-a26abea2-97ad-458a-9455-c6eeefe014c9.png)
